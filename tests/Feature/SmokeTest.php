@@ -37,7 +37,6 @@ class SmokeTest extends TestCase
      */
     private const KNOWN_BROKEN = [
         'shop/cart',                      // route points to ShoppingController::cart_show(), which does not exist
-        'admin/childcategories/manage',   // a child category references a deleted subcategory
     ];
 
     protected function setUp(): void

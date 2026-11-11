@@ -48,7 +48,11 @@
                            
 
                             <td>
-                                <span>{{ $value->subcategory->subcategoryName }}</span>
+                                @if ($value->subcategory)
+                                    <span>{{ $value->subcategory->subcategoryName }}</span>
+                                @else
+                                    <span class="badge bg-danger" title="Subcategory #{{ $value->subcategory_id }} was deleted. Edit this child category and choose a new subcategory.">Subcategory missing</span>
+                                @endif
                             </td>
 
                             <td>
