@@ -1,0 +1,45 @@
+{
+    "name": "olimortimer/laravelshoppingcart",
+    "description": "Laravel Shoppingcart",
+    "keywords": [
+        "laravel",
+        "shoppingcart"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Rob Gloudemans",
+            "email": "info@robgloudemans.nl"
+        },
+        {
+            "name": "Michael V.",
+            "email": "michael@michaelbelgium.me"
+        },
+        {
+            "name": "Oli Mortimer",
+            "email": "oli@olimortimer.com"
+        }
+    ],
+    "require": {
+        "illuminate/support": "^9|^10|^11|^12",
+        "illuminate/session": "^9|^10|^11|^12",
+        "illuminate/events": "^9|^10|^11|^12"
+    },
+    "autoload": {
+        "psr-4": {
+            "Gloudemans\\Shoppingcart\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider"
+            ],
+            "aliases": {
+                "Cart": "Gloudemans\\Shoppingcart\\Facades\\Cart"
+            }
+        }
+    },
+    "version": "6.0.2"
+}
